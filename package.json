@@ -1,0 +1,30 @@
+{
+  "name": "imuduino-raw",
+  "version": "1.0.0",
+  "description": "Interface to the imuduino for node, born out of experimentation",
+  "main": "imuduino.js",
+  "scripts": {
+    "test": "tap ./test/[^_]*.js",
+    "lint": "jshint .",
+    "validate": "npm ls"
+  },
+  "author": "Russell Hay",
+  "license": "MIT",
+  "dependencies": {
+    "imuduino-service-info": "^1.0.0",
+    "noble": "^1.1.0"
+  },
+  "devDependencies": {
+    "precommit-hook": "^3.0.0",
+    "tap": "^1.4.1"
+  },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RussTheAerialist/imuduino-raw"
+  }
+}
